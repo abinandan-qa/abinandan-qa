@@ -24,24 +24,24 @@ VSCode IDE (preferred)
 
 #### Environmental Variables
 
-1.WORKDAY_API_PRIVATE_KEY,
-2.WORKDAY_API_CLIENT_ID,
-3.WORKDAY_API_USERNAME,
-4.WORKDAY_API_AUDIENCE,
-5.WORKDAY_API_JWT_EXPIRY_TIME,
-6.WORKDAY_API_SIGN_ALGORITHM,
-7.GCP_PROJECT,
-8.baseUrl,
-9.tokenUrl,
-10.staffingAPIUrl,
-11.recruitingAPIurl,
-12.compensationAPIurl,
-13.integrationAPIurl,
-14.datastoreKind,
-15.projectID,
-16.locationID,
-17.testRunEnvironment,
-18.GOOGLE_APPLICATION_CREDENTIALS(Note: The value should be the path of the service account file in your local).
+1.WORKDAY_API_PRIVATE_KEY
+2.WORKDAY_API_CLIENT_ID
+3.WORKDAY_API_USERNAME
+4.WORKDAY_API_AUDIENCE
+5.WORKDAY_API_JWT_EXPIRY_TIME
+6.WORKDAY_API_SIGN_ALGORITHM
+7.GCP_PROJECT
+8.baseUrl
+9.tokenUrl
+10.staffingAPIUrl
+11.recruitingAPIurl
+12.compensationAPIurl
+13.integrationAPIurl
+14.datastoreKind
+15.projectID
+16.locationID
+17.testRunEnvironment
+18.GOOGLE_APPLICATION_CREDENTIALS(Note: The value should be the path of the service account file in your local)
 
 Note:
 Please refer to vault => Techops-PeopleData-QA => wd-sbx-exports
