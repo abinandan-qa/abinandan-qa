@@ -1,14 +1,3 @@
-- 👋 Hi, I’m @abinandan
-- 👀 I’m interested in Test Automation, JavaScript,
-- 🌱 I’m currently learning TypeScript
-- 💞️ I’m looking to collaborate on UIAutomation stuff
-- 📫 Reach me @ abinandan1989@gmail.com
-
-<!---
-abinandan-qa/abinandan-qa is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-
 # PeopleData E2E Testing Framework - Events 2.0
 
 Test Automation framework built using NodeJS tech stack [cucumber.js, supertest.js, chai.js] designed for adding Events V2 E2E Tests.
@@ -57,14 +46,32 @@ Please refer to vault => Techops-PeopleData-QA => wd-sbx-exports
 
 To run all e2e tests 
 ```
- ./node_modules/.bin/cucumber-js ./features/eventsV2/
-
+./node_modules/.bin/cucumber-js ./features/eventsV2/
 ```
 
 To run specific e2e test
 ```
  npm run <script-name>
-
  e.g. npm run hire-v2-e2e-test [Please refer to package.json]
+ ```
 
+### Test Limitations
+
+1.Correction and Cancellation scenarios not possible due to WD SOAP XML Requests unavailability for all the Business Process in Scope<br/>
+2.Automation not feasible for below events [TAC Team finding] <br/>
 ```
+legal-name-changed
+personal-contact-info-changed
+personal-contact-info-corrected
+personal-contact-info-cancelled
+personal-info-changed
+personal-info-cancelled
+id-changed
+
+Reason:
+
+While hiring a candidate, few BP's will be created automatically with 'inprogress' status along with the hire BP because of which above listed events can't be automated, as the candidate already has an inprogress BP for this change, workday won't allow to create new one.
+```
+
+
+
